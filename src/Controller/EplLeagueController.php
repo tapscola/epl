@@ -47,8 +47,8 @@ class EplLeagueController extends AbstractController
       $entityManager->persist($league);
       $entityManager->flush();
 
-        return $this->render('epl_league/index.html.twig', [
-            'controller_name' => 'EplLeagueController',
-        ]);
+      return $this->render('epl_league/index.html.twig', [
+        'controller_name' => 'EplLeagueController',
+      ]);
     }
 }
