@@ -61,9 +61,21 @@ class EplLeague
      */
     private $crestUrl;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $name;
+
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function setId(int $id): self
+    {
+      $this->id = $id;
+
+      return $this;
     }
 
     public function getPosition(): ?int
@@ -170,6 +182,18 @@ class EplLeague
     public function setCrestUrl(string $crestUrl): self
     {
         $this->crestUrl = $crestUrl;
+
+        return $this;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
 
         return $this;
     }
