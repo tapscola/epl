@@ -7,6 +7,7 @@ an epl symfony poc app
 2. Created the EplLeague entity and extend in EplLeagueController class
 3. We are updating the data by visiting /epl/league link manually atm
 4. We then query the db entity objects and render in twig and with vue components
+5. In a controller class we invoke the EntityManagerInterface to query the data as entity objects and convert to Json array
 
 ## Frameworks
 1. Symfony
