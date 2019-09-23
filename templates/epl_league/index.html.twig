@@ -2,17 +2,92 @@
 
 {% block title %} Welcome !{% endblock %}
 {% block body %}
-    <div class="epl" id="app">
-        <app></app>
-        {{ name }}
-        {{ played }}
-        {{ won }}
-        {{ draw }}
-        {{ lost }}
-        {{ goalsfor }}
-        {{ goalsagainst }}
-        {{ cresturl }}
-        {{ points }}
+    <div class="epl" id="app" style="max-width: 800px; margin: 0 auto">
+        <app>
+            <div class="row">
+                <div class="col">
+                    <div class="row">Pos</div>
+                    <div class="row">{{ pos }}</div>
+                    <div class="row">{{ pos_1 }}</div>
+                    <div class="row">{{ pos_2 }}</div>
+                    <div class="row">{{ pos_3 }}</div>
+                    <div class="row">{{ pos_4 }}</div>
+                    <div class="row">{{ pos_5 }}</div>
+                </div>
+                <div class="col-3">
+                    <div class="row">Team</div>
+                        <div class="row" ><img src="{{ cresturl }}" style="height:24px">{{ name }}</div>
+                        <div class="row" ><img src="{{ cresturl_1 }}" style="height:24px">{{ name_1 }}</div>
+                        <div class="row" ><img src="{{ cresturl_2 }}" style="height:24px">{{ name_2 }}</div>
+                        <div class="row" ><img src="{{ cresturl_3 }}" style="height:24px">{{ name_3 }}</div>
+                        <div class="row" ><img src="{{ cresturl_4 }}" style="height:24px">{{ name_4 }}</div>
+                        <div class="row" ><img src="{{ cresturl_5 }}" style="height:24px">{{ name_5 }}</div>
+                </div>
+                <div class="col">
+                    <div class="row">P</div>
+                    <div class="row">{{ played }}</div>
+                    <div class="row">{{ played_1 }}</div>
+                    <div class="row">{{ played_2 }}</div>
+                    <div class="row">{{ played_3 }}</div>
+                    <div class="row">{{ played_4 }}</div>
+                    <div class="row">{{ played_5 }}</div>
+                </div>
+                <div class="col">
+                    <div class="row">W</div>
+                    <div class="row">{{ won }}</div>
+                    <div class="row">{{ won_1 }}</div>
+                    <div class="row">{{ won_2 }}</div>
+                    <div class="row">{{ won_3 }}</div>
+                    <div class="row">{{ won_4 }}</div>
+                    <div class="row">{{ won_5 }}</div>
+                </div>
+                <div class="col">
+                    <div class="row">D</div>
+                    <div class="row">{{ draw }}</div>
+                    <div class="row">{{ draw_1 }}</div>
+                    <div class="row">{{ draw_2 }}</div>
+                    <div class="row">{{ draw_3 }}</div>
+                    <div class="row">{{ draw_4 }}</div>
+                    <div class="row">{{ draw_5 }}</div>
+                </div>
+                <div class="col">
+                    <div class="row">L</div>
+                    <div class="row">{{ lost }}</div>
+                    <div class="row">{{ lost_1 }}</div>
+                    <div class="row">{{ lost_2 }}</div>
+                    <div class="row">{{ lost_3 }}</div>
+                    <div class="row">{{ lost_4 }}</div>
+                    <div class="row">{{ lost_5 }}</div>
+                </div>
+                <div class="col">
+                    <div class="row">GA</div>
+                    <div class="row">{{ goalsfor }}</div>
+                    <div class="row">{{ goalsfor_1 }}</div>
+                    <div class="row">{{ goalsfor_2 }}</div>
+                    <div class="row">{{ goalsfor_3 }}</div>
+                    <div class="row">{{ goalsfor_4 }}</div>
+                    <div class="row">{{ goalsfor_5 }}</div>
+                </div>
+                <div class="col">
+                    <div class="row">GD</div>
+                    <div class="row">{{ goalsagainst }}</div>
+                    <div class="row">{{ goalsagainst_1 }}</div>
+                    <div class="row">{{ goalsagainst_2 }}</div>
+                    <div class="row">{{ goalsagainst_3 }}</div>
+                    <div class="row">{{ goalsagainst_4 }}</div>
+                    <div class="row">{{ goalsagainst_5 }}</div>
+                </div>
+                <div class="col">
+                    <div class="row">Pts</div>
+                    <div class="row">{{ points }}</div>
+                    <div class="row">{{ points_1 }}</div>
+                    <div class="row">{{ points_2 }}</div>
+                    <div class="row">{{ points_3 }}</div>
+                    <div class="row">{{ points_4 }}</div>
+                    <div class="row">{{ points_5 }}</div>
+                </div>
+            </div>
+        </app>
 
     </div>
 {% endblock %}

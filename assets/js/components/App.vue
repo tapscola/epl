@@ -1,7 +1,15 @@
 <template>
-    <h2 class="center"> EPL Log standings </h2>
+    <div id="#epl">
+        {{ posts }}
+    </div>
 </template>
-
 <script>
-    console.log("Loaded")
+    export default {
+        data() {
+            return {
+                posts: ''
+            }
+        }
+    }
+
 </script>
