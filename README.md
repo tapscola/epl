@@ -16,6 +16,8 @@ an epl symfony poc app
 
 ## Screenshots
 1. Final look (css love missing), filtered only and getting top 6 only enough to get to Europa league
+2. visit the path your-domain/epl/log
+
 ![alt text](log.png)
 
 
@@ -29,3 +31,8 @@ an epl symfony poc app
 ## Screenshot Database
 1. After running migration script ./bin/console doctrine:migrations:migrate
 ![alt text](db.png)
+
+## Notes
+i had no much time to investigate server issues running the code here www.tapscola.com/epl/log
+
+for any questions taps@tapscola.com
