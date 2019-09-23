@@ -26,7 +26,7 @@ class EplLeagueController extends AbstractController
       $content = json_decode($response, true);
       //$content = $content->getContent();
       //$content = $content->toArray();
-      dump($content['standings'][2]['table'][1]);die;
+      //dump($content['standings'][2]['table']);die;
       // let's update the database with the api data
       $entityManager = $this->getDoctrine()->getManager();
       // extending our EntityLeague class
